@@ -3,6 +3,8 @@ const { printList } = require('./printList.js')
 
 // Remove duplicates from an unsorted linked list 
 // How would you solve this problem if a temporary buffer is not allowed? 
+  // Without a temporary buffer, the algorithm will take O(n^2) time to check subsequent 
+  // nodes, for each node, for any duplicates (current/runner pointers)
 
 const removeDupsSingle = (list) => {
   let node = list.head;
