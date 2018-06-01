@@ -1,8 +1,6 @@
 const { LinkedList } = require('./LinkedList.js');
 const { LinkedListNode } = require('./LinkedListNode.js');
 
-console.log(LinkedList);
-
 let list = new LinkedList();
 console.log(list);
 
