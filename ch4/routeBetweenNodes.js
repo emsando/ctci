@@ -40,5 +40,10 @@ const routeBetweenGraphNodes = (graph, startNode, endNode) => {
   in the graph and flag them as such. 
 
   The time complexity here is O(V + E), where V is total vertices (objects in the graph) and E is total number of Edges (connections)
-  between vertices. In the worst case we'd have to do O(V + E) operations (constants dropped). 
+  between vertices. In the worst case we'd have to do O(V + E) operations (constants dropped).
+  
+  For very dense graphs, E may approach V*V, where each vertice has an edge to all others. In this case V + E is more accurately
+  represented as V + V*(V-1) which creates O(V^2). 
+
+  For very sparse graphs, E may be much closer to the value V itself.
 */
