@@ -38,7 +38,7 @@ stack.push(5);
 stack.push(2);
 stack.push(3);
 stack.push(4);
-stack.push(1);
+stack.push(2);
 console.log(stack, stack.values, stack.min());
 
 let val = stack.pop();
