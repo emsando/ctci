@@ -83,3 +83,12 @@ maze = [
 ];
 result = getPath(maze);
 console.log(result); // ["Row: 0, Col: 0", "Row: 0, Col: 1", "Row: 1, Col: 1", "Row: 1, Col: 2", "Row: 1, Col: 3", "Row: 2, Col: 3", "Row: 3, Col: 3", "Row: 3, Col: 4"]
+
+/* 
+  ANALYSIS: 
+  Time Complexity: O(n) where n is spaces in the grid - so O(rows * cols);
+  Space Complexity: O(n)
+
+  Without memoizing the checkPathFromPoint calls by adding points to failedPoints the time complexity would be 2^(rows * cols)
+  as every point has two other points it needs to check. 
+*/
